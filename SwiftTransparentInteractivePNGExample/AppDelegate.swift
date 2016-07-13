@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  SwiftTransparentInteractivePNGExample
-//
-//  Created by Luke Van In on 2016/07/13.
-//  Copyright © 2016 Luke Van In. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

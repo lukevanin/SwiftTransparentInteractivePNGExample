@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ey7-Tm-lT5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="w33-kW-0wa">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ey7-Tm-lT5" customClass="ViewController" customModule="SwiftTransparentInteractivePNGExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="PP6-Uy-XDX"/>
+                        <viewControllerLayoutGuide type="bottom" id="abc-lm-LEV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="7JI-ZB-1QH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="layer-0" translatesAutoresizingMaskIntoConstraints="NO" id="AC4-UL-qFF">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="layer-1" translatesAutoresizingMaskIntoConstraints="NO" id="JJV-Mx-Ya9">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="layer-3" translatesAutoresizingMaskIntoConstraints="NO" id="Xng-3b-IPQ">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="layer-2" translatesAutoresizingMaskIntoConstraints="NO" id="qMp-4E-us6">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="qMp-4E-us6" firstAttribute="centerX" secondItem="7JI-ZB-1QH" secondAttribute="centerX" id="14p-xz-ayw"/>
+                            <constraint firstItem="Xng-3b-IPQ" firstAttribute="centerX" secondItem="7JI-ZB-1QH" secondAttribute="centerX" id="CPM-Yt-89z"/>
+                            <constraint firstItem="qMp-4E-us6" firstAttribute="centerY" secondItem="7JI-ZB-1QH" secondAttribute="centerY" id="SAa-NK-LKC"/>
+                            <constraint firstItem="Xng-3b-IPQ" firstAttribute="centerY" secondItem="7JI-ZB-1QH" secondAttribute="centerY" id="Uqj-5U-lhm"/>
+                            <constraint firstItem="JJV-Mx-Ya9" firstAttribute="centerX" secondItem="7JI-ZB-1QH" secondAttribute="centerX" id="keC-VL-yXp"/>
+                            <constraint firstItem="AC4-UL-qFF" firstAttribute="centerY" secondItem="7JI-ZB-1QH" secondAttribute="centerY" id="kz7-AU-8UN"/>
+                            <constraint firstItem="JJV-Mx-Ya9" firstAttribute="centerY" secondItem="7JI-ZB-1QH" secondAttribute="centerY" id="mY4-Tc-64G"/>
+                            <constraint firstItem="AC4-UL-qFF" firstAttribute="centerX" secondItem="7JI-ZB-1QH" secondAttribute="centerX" id="qtX-8H-Dbx"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UcX-kx-kGL" appends="YES" id="5Sv-Ru-oGO"/>
+                        </connections>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outletCollection property="images" destination="Xng-3b-IPQ" collectionClass="NSMutableArray" id="JcT-Og-y5x"/>
+                        <outletCollection property="images" destination="JJV-Mx-Ya9" collectionClass="NSMutableArray" id="77E-p9-UoC"/>
+                        <outletCollection property="images" destination="AC4-UL-qFF" collectionClass="NSMutableArray" id="aH4-R6-PPo"/>
+                        <outletCollection property="images" destination="qMp-4E-us6" collectionClass="NSMutableArray" id="gpw-VQ-tUh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Be-v0-rhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UcX-kx-kGL">
+                    <connections>
+                        <action selector="tapGestureHandler:" destination="Ey7-Tm-lT5" id="Vr5-mN-PV9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="1521" y="399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="layer-0" width="640" height="640"/>
+        <image name="layer-1" width="640" height="640"/>
+        <image name="layer-2" width="640" height="640"/>
+        <image name="layer-3" width="640" height="640"/>
+    </resources>
 </document>
